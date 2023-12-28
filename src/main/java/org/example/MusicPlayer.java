@@ -3,26 +3,28 @@ package org.example;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
-@Data
 @Component
+@Data
+@Scope("prototype")
 public class MusicPlayer {
-    //    private List<Music> musicList = new ArrayList<>();
     @Autowired
     @Qualifier("classicalMusic")
     private Music classicMusic;
     @Autowired
     @Qualifier("rockMusic")
     private Music rockMusic;
+    @Value("${musicPlayer.name}")
     private String name;
+    @Value("${musicPlayer.volume}")
     private int volume;
 
     public MusicPlayer() {
-//        this.music = music;
-//        this.musicList = musicList;
     }
 
     public void playMusic(MusicEnum musicEnum) {
@@ -34,11 +36,9 @@ public class MusicPlayer {
                     + " " + rockMusic.getSong());
         }
     }
-
     public void initPls() {
         System.out.println("MP was born");
     }
-
     public void destroyPls() {
         System.out.println("MP was destroy");
     }

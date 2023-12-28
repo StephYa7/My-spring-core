@@ -1,5 +1,6 @@
 package org.example;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
@@ -9,12 +10,14 @@ import java.util.List;
 public class TestSpring {
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
+
+
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 //        Computer computer = context.getBean("computer",Computer.class);
 //        System.out.println(context.toString());
 
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        musicPlayer.playMusic(MusicEnum.CLASSICAL);
 
 
 
@@ -32,17 +35,20 @@ public class TestSpring {
 //        musicPlayer.setMusicList(musicList);
         System.out.println("------------1-----------");
 //        musicPlayer.playMusic();
-//        System.out.println(musicPlayer.getName());
-//        System.out.println(musicPlayer.getVolume());
+        System.out.println(musicPlayer.getName());
+        System.out.println(musicPlayer.getVolume());
         System.out.println("------------2-----------");
-//        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
-//        musicPlayer2.playMusic();
-//        System.out.println(musicPlayer2.getName());
-//        System.out.println(musicPlayer2.getVolume());
+        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
+        musicPlayer.playMusic(MusicEnum.CLASSICAL);
+        musicPlayer2.playMusic(MusicEnum.ROCK);
+        System.out.println(musicPlayer2.getName());
+        System.out.println(musicPlayer2.getVolume());
 
         System.out.println("------------3-----------");
-//        System.out.println(musicPlayer.hashCode());
-//        System.out.println(musicPlayer2.hashCode());
+        System.out.println(musicPlayer.hashCode());
+        System.out.println(musicPlayer2.hashCode());
+        System.out.println(musicPlayer==musicPlayer2);
+        System.out.println(musicPlayer.equals(musicPlayer2));
         context.close();
 
     }

@@ -2,6 +2,8 @@ package org.example;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -20,10 +22,12 @@ public class ClassicalMusic implements Music {
         return new ClassicalMusic();
     }
 
+    @PostConstruct
     public void doMyInit() {
         System.out.println("Doing my initialization");
     }
 
+    @PreDestroy
     public void doMyDestroy() {
         System.out.println("Doing my destroy");
     }
