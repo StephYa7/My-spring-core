@@ -8,32 +8,30 @@
          http://www.springframework.org/schema/context
           http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
+    <context:component-scan base-package="org.example"/>
 
 
-    <bean id="musicPlayer2" class="org.example.MusicPlayer">
-        <constructor-arg>
-            <list>
-                <bean id="musicBean2" class="org.example.RockMusic"></bean>
-                <bean id="musicBean1" class="org.example.PopMusic"></bean>
-                <bean id="musicBean3" class="org.example.ClassicalMusic"></bean>
-            </list>
-        </constructor-arg>
-        <property name="name" value="HAHA"/>
-        <property name="volume" value="666"/>
-    </bean>
-
-
-    <bean id="musicPlayer" class="org.example.MusicPlayer">
-        <property name="musicList">
-            <list>
-                <bean id="musicBean1" class="org.example.ClassicalMusic"></bean>
-                <bean id="musicBean2" class="org.example.PopMusic"></bean>
-                <bean id="musicBean3" class="org.example.RockMusic"></bean>
-            </list>
-        </property>
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+    <!--    <context:property-placeholder location="classpath:musicPlayer.properties"/>-->
+    <!--    <bean id="musicPlayer"-->
+    <!--          class="org.example.MusicPlayer"-->
+    <!--          scope="prototype"-->
+    <!--          init-method="initPls"-->
+    <!--          destroy-method="destroyPls">-->
+    <!--        <property name="musicList">-->
+    <!--            <list>-->
+    <!--                <bean id="musicBean1"-->
+    <!--                      class="org.example.ClassicalMusic"-->
+    <!--                      init-method="doMyInit"-->
+    <!--                      destroy-method="doMyDestroy"-->
+    <!--                      factory-method="getInstance"-->
+    <!--                ></bean>-->
+    <!--                <bean id="musicBean2" class="org.example.PopMusic"></bean>-->
+    <!--                <bean id="musicBean3" class="org.example.RockMusic"></bean>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--        <property name="name" value="${musicPlayer.name}"/>-->
+    <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+    <!--    </bean>-->
 
 </beans>
