@@ -13,25 +13,27 @@
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
-    <!--    <bean id="musicPlayer"-->
-    <!--          class="org.example.MusicPlayer"-->
-    <!--          scope="prototype"-->
-    <!--          init-method="initPls"-->
-    <!--          destroy-method="destroyPls">-->
-    <!--        <property name="musicList">-->
-    <!--            <list>-->
-    <!--                <bean id="musicBean1"-->
-    <!--                      class="org.example.ClassicalMusic"-->
-    <!--                      init-method="doMyInit"-->
-    <!--                      destroy-method="doMyDestroy"-->
-    <!--                      factory-method="getInstance"-->
-    <!--                ></bean>-->
-    <!--                <bean id="musicBean2" class="org.example.PopMusic"></bean>-->
-    <!--                <bean id="musicBean3" class="org.example.RockMusic"></bean>-->
-    <!--            </list>-->
-    <!--        </property>-->
-    <!--        <property name="name" value="${musicPlayer.name}"/>-->
-    <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
-    <!--    </bean>-->
+<!--
+        <bean id="musicPlayer"
+              class="org.example.MusicPlayer"
+              scope="prototype"
+              init-method="initPls"
+              destroy-method="destroyPls">
+            <property name="musicList">
+                <list>
+                    <bean id="musicBean1"
+                          class="org.example.ClassicalMusic"
+                          init-method="doMyInit"
+                          destroy-method="doMyDestroy"
+                          factory-method="getInstance"
+                    ></bean>
+                    <bean id="musicBean2" class="org.example.PopMusic"></bean>
+                    <bean id="musicBean3" class="org.example.RockMusic"></bean>
+                </list>
+            </property>
+            <property name="name" value="${musicPlayer.name}"/>
+            <property name="volume" value="${musicPlayer.volume}"/>
+        </bean>
+-->
 
 </beans>
