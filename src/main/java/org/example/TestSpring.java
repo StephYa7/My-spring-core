@@ -10,11 +10,14 @@ public class TestSpring {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Computer computer = context.getBean("computer",Computer.class);
-        System.out.println(computer);
-
+//        Computer computer = context.getBean("computer",Computer.class);
+//        System.out.println(context.toString());
 
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        musicPlayer.playMusic(MusicEnum.CLASSICAL);
+
+
+
 //        List<Music> musicList = new ArrayList<>();
 //        musicList.add(ClassicalMusic.getInstance());
 //        musicList.add(new RockMusic());
@@ -28,18 +31,18 @@ public class TestSpring {
 
 //        musicPlayer.setMusicList(musicList);
         System.out.println("------------1-----------");
-        musicPlayer.playMusic();
+//        musicPlayer.playMusic();
 //        System.out.println(musicPlayer.getName());
 //        System.out.println(musicPlayer.getVolume());
         System.out.println("------------2-----------");
-        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
+//        MusicPlayer musicPlayer2 = context.getBean("musicPlayer", MusicPlayer.class);
 //        musicPlayer2.playMusic();
 //        System.out.println(musicPlayer2.getName());
 //        System.out.println(musicPlayer2.getVolume());
 
         System.out.println("------------3-----------");
-        System.out.println(musicPlayer.hashCode());
-        System.out.println(musicPlayer2.hashCode());
+//        System.out.println(musicPlayer.hashCode());
+//        System.out.println(musicPlayer2.hashCode());
         context.close();
 
     }

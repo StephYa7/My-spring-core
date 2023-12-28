@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-//@Data
+@Data
 @Component
 public class Computer {
     private int id;
@@ -16,8 +16,8 @@ public class Computer {
         this.musicPlayer = player;
     }
 
-    @Override
-    public String toString() {
-        return "PC" + id + " " + musicPlayer.playMusic();
-    }
+//    @Override
+//    public String toString() {
+//        return "PC" + id + " " + musicPlayer.playMusic();
+//    }
 }

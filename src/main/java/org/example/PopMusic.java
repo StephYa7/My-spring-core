@@ -1,11 +1,11 @@
-package org.example;
-
-import org.springframework.stereotype.Component;
-
+//package org.example;
+//
+//import org.springframework.stereotype.Component;
+//
 //@Component
-public class PopMusic implements Music {
-    @Override
-    public String getSong() {
-        return "Lady Gaga - Bad";
-    }
-}
+//public class PopMusic implements Music {
+//    @Override
+//    public String getSong() {
+//        return "Lady Gaga - Bad";
+//    }
+//}
