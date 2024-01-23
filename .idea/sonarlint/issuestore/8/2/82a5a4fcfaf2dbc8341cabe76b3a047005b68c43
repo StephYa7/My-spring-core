@@ -1,0 +1,14 @@
+
+Y
+java:S1854"<Remove this useless assignment to local variable "computer".(‰Â¶¦8…–ÚøÒ1
+“
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú78é®è†Ó1
+X	java:S125	"<This block of commented-out lines of code should be removed.(£ˆÜÂ8»·µ‡Ó1
+J
+java:S1481"-Remove this unused "computer" local variable.(‰Â¶¦8–ÚøÒ1
+X	java:S125"<This block of commented-out lines of code should be removed.(ó£Àı8—®¨†Ó1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ô«àØ8ÃœÕ†Ó1
+]	java:S125"<This block of commented-out lines of code should be removed.(ìşÃ¡úÿÿÿÿ8˜–ÚøÒ1
+X	java:S125*"<This block of commented-out lines of code should be removed.(çïı8Ş©£†Ó1
+‚
+java:S1128"fRemove this unused import 'org.springframework.context.annotation.AnnotationConfigApplicationContext'.(€¡¹;8¾·µ‡Ó1

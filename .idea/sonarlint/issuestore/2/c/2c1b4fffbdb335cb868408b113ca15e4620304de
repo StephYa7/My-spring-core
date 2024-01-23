@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ï¸º©
+H
+java:S1068"&Remove this unused "id" private field.(ôç¼Óşÿÿÿÿ8Õ–£Ó1
+Q
+java:S1068"/Remove this unused "musicPlayer" private field.(ŒÖıÿÿÿÿ8Õ–£Ó1

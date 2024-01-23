@@ -1,0 +1,13 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úŽ¥Åýÿÿÿÿ
+\
+java:S1854":Remove this useless assignment to local variable "music1".(‹”Öáùÿÿÿÿ8Žá’¤Ó1
+Y
+java:S1854"<Remove this useless assignment to local variable "computer".(‰Â¶¦8‡¶…¤Ó1
+“
+java:S1130	"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú78˜¬–¤Ó1
+Q	java:S125"<This block of commented-out lines of code should be removed.(£ˆÜÂ
+J
+java:S1481"-Remove this unused "computer" local variable.(‰Â¶¦8Š¶…¤Ó1
+M
+java:S1481"+Remove this unused "music1" local variable.(‹”Öáùÿÿÿÿ8’á’¤Ó1

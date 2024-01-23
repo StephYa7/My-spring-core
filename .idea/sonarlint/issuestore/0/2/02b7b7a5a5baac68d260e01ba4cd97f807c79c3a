@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú¥Åıÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+k
+java:S6832"PDon't auto-wire this non-Singleton bean into a Singleton bean (autowired field).(ŒÖıÿÿÿÿ
+w
+java:S6832"\Don't auto-wire this non-Singleton bean into a Singleton bean (single argument constructor).(½–áøûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(òß¿•üÿÿÿÿ
