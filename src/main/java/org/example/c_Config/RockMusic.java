@@ -10,9 +10,9 @@ public class RockMusic implements Music {
     List<String> songs = new ArrayList<>();
 
     public RockMusic() {
-        songs.add("Freak On A Leash");
-        songs.add("I disappear");
-        songs.add("A.D.I.D.A.S.");
+        songs.add("rock 1");
+        songs.add("rock 2");
+        songs.add("rock 3");
     }
 
     @Override

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
-@ComponentScan("org.example")
+@ComponentScan("org.example.c_Config")
 @PropertySource("classpath:musicPlayer.properties")
 public class SpringConfig {
 
@@ -36,9 +36,9 @@ public class SpringConfig {
     @Bean
     public List<Music> musicListForMusicPlayer() {
         List<Music> result = new ArrayList<>();
-        result.add(ClassicalMusic.getInstance());
-        result.add(new PopMusic());
-        result.add(new RockMusic());
+        result.add(rockMusic());
+        result.add(popMusic());
+        result.add(classicalMusic());
         return result;
     }
 

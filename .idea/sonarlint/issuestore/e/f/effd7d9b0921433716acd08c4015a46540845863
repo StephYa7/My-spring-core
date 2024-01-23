@@ -1,13 +1,19 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·Â»ñıÿÿÿÿ
+\
+java:S1854":Remove this useless assignment to local variable "music2".(¹×Ãíúÿÿÿÿ8éÿ¤Ó1
 R
-java:S1854"<Remove this useless assignment to local variable "computer".(‰Â¶¦
-Œ
-java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú7
-Q	java:S125"<This block of commented-out lines of code should be removed.(£ˆÜÂ
+java:S1854"<Remove this useless assignment to local variable "computer".(‰Â¶¦
+“
+java:S1130
+"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú78Š§ş¤Ó1
 C
-java:S1481"-Remove this unused "computer" local variable.(‰Â¶¦
-Q	java:S125"<This block of commented-out lines of code should be removed.(ó£Àı
-Q	java:S125"<This block of commented-out lines of code should be removed.(Ô«àØ
-V	java:S125"<This block of commented-out lines of code should be removed.(ìşÃ¡úÿÿÿÿ
-Q	java:S125)"<This block of commented-out lines of code should be removed.(çïı
+java:S1481"-Remove this unused "computer" local variable.(‰Â¶¦
+M
+java:S1481"+Remove this unused "music2" local variable.(¹×Ãíúÿÿÿÿ8òÿ¤Ó1
+
+java:S1128"_Remove this unused import 'org.springframework.context.support.ClassPathXmlApplicationContext'.(•ËÛüÿÿÿÿ8•§ş¤Ó1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Òµâ¥Ó1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Óµâ¥Ó1

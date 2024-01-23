@@ -10,9 +10,9 @@ public class PopMusic implements Music {
     List<String> songs = new ArrayList<>();
 
     public PopMusic() {
-        songs.add("ABBA - S.O.S.");
-        songs.add("Lady Gaga - Wrecking ball");
-        songs.add("Wham - Last Christmas");
+        songs.add("pop 1");
+        songs.add("pop 2");
+        songs.add("pop 3");
     }
 
     @Override

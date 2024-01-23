@@ -13,9 +13,9 @@ public class ClassicalMusic implements Music {
     List<String> songs = new ArrayList<>();
 
     private ClassicalMusic() {
-        songs.add("Moonlight sonata");
-        songs.add("The hall of the mountain king");
-        songs.add("Palladio");
+        songs.add("classic 1");
+        songs.add("classic 2");
+        songs.add("classic 3");
     }
 
     public static ClassicalMusic getInstance() {
