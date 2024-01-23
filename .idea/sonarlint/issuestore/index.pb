@@ -1,24 +1,4 @@
 
-W
-'src/main/java/org/example/PopMusic.java,1\7\173a99fbdbb4d3914d98c7fea685d1a806a549c8
-W
-'src/main/java/org/example/Computer.java,e\1\e1e00cdcf43cdd949ffbd8d0f66d2eceeda37b5a
-Y
-)src/main/java/org/example/TestSpring.java,8\2\82a5a4fcfaf2dbc8341cabe76b3a047005b68c43
-T
-$src/main/java/org/example/Music.java,8\0\806b58904e68f8337e2feb0f980b13513f2654d8
-X
-(src/main/java/org/example/RockMusic.java,1\c\1c5b23f3ec3cd030b9a762f0f8c81d6f42517f2f
-Z
-*src/main/java/org/example/MusicPlayer.java,8\4\84e5d19a5e3b7b4efacd85ccba351365b6e432ba
-[
-+src/main/java/org/example/SpringConfig.java,c\9\c91a70e982c2c1be6c4e3e1b5d7b49a606790cd9
-]
--src/main/java/org/example/ClassicalMusic.java,7\c\7c367aae3bfdeb4f9a689c1cb72cfd03b4f32b4f
-V
-&src/main/java/org/example/WithXML.java,d\9\d9c19cf48e0fe95994c4b73c3e368368da7aa4c1
-f
-6src/main/java/org/example/WithConfig/SpringConfig.java,8\d\8d732f37e52b828abc8e528cdf6637547d6bdc8d
 d
 4src/main/java/org/example/c_Config/SpringConfig.java,8\c\8cfab299461857fa0ed99b62de521f5a76700826
 c
